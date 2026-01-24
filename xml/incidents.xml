@@ -4,5 +4,11 @@
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE incidents SYSTEM "incidents.dtd">
     <?xml-stylesheet type="text/xsl" href="incidents.xsl"?>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE incidents SYSTEM "incidents.dtd">
+    <?xml-stylesheet type="text/xsl" href="incidents.xsl"?>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE incidents SYSTEM "incidents.dtd">
+    <?xml-stylesheet type="text/xsl" href="incidents.xsl"?>
     <?xml version='1.0' encoding='utf-8'?>
 <incidents><incident id="2"><title>inflaction</title><description>no money no way to buy </description><status>IN_PROGRESS</status><user_id>1</user_id></incident><incident id="3"><title>the bank failed</title><description>bank has been stoled</description><status>OPEN</status><user_id>2</user_id></incident><incident id="4"><title>work stop</title><description>the work stop due to l7daya </description><status>OPEN</status><user_id>3</user_id></incident></incidents>

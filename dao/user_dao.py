@@ -28,12 +28,12 @@ def get_user_by_email(email):
     conn.close()
     return user
 
-def update_user(user_id,name,email,role):
+def update_user(user_id,role):
     conn = get_connection()
     cur = conn.cursor()
-    cur.execute("""
-    UPDATE users SET name = ?, email = ?, role = ? WHERE id = ?
-    """,(name, email, role, user_id))
+    cur.execute( "UPDATE users SET role = ? WHERE id = ?",
+        (role, user_id)
+    )
     conn.commit()
     conn.close()
 

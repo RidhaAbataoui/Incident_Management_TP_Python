@@ -62,10 +62,8 @@ def admin_menu():
 
             elif choice == "3":
                 user_id = int(input("User ID: "))
-                name = input("New name: ")
-                email = input("New email: ")
                 role = input("Role (admin/employee): ")
-                edit_user(current_user, user_id, name, email, role)
+                edit_user(current_user, user_id, role)
                 print("✅ User updated")
 
             elif choice == "4":
