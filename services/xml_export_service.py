@@ -63,11 +63,13 @@ def add_dtd_to_incidents_xml():
     with open("xml/incidents.xml", "r", encoding="utf-8") as f:
         content = f.read()
 
-    if "<!DOCTYPE incidents" not in content:
-        content = content.replace(
-            '<?xml version="1.0" encoding="utf-8"?>',
-            '<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE incidents SYSTEM "incidents.dtd">'
-        )
+    header = """<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE incidents SYSTEM "incidents.dtd">
+    <?xml-stylesheet type="text/xsl" href="incidents.xsl"?>
+    """
+    content = content.replace(
+        '<?xml version="1.0" encoding="utf-8"?>\n', ''
+    )
 
     with open("xml/incidents.xml", "w", encoding="utf-8") as f:
-        f.write(content)
+        f.write(header + content)

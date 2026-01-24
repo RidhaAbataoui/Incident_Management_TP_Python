@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE users SYSTEM "users.dtd">
 <?xml-stylesheet type="text/xsl" href="users.xsl"?>
-<users><user id="1"><name>Admin</name><email>admin@system.com</email><role>admin</role></user><user id="3"><name>ridha</name><email>ridha@abataoui.com</email><role>employee</role></user></users>
+<users>
+    <user id="1"><name>Admin</name><email>admin@system.com</email><role>admin</role></user>
+    <user id="3"><name>ridha</name><email>ridha@abataoui.com</email><role>employee</role></user>
+    <user id="4"><name>yahya</name><email>yahya@system.com</email><role>admin</role></user>
+</users>
